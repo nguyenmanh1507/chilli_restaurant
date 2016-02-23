@@ -19,16 +19,6 @@ gulp.task('templates', function() {
 	;
 });
 
-gulp.task('templates:partials', function() {
-	return gulp.src('./views/components/*.jade')
-		.pipe($.plumber())
-		.pipe($.jade({
-			pretty: true
-		}))
-		.pipe(gulp.dest('./partials'))
-	;
-});
-
 // PostCSS task
 gulp.task('css', function() {
 	var bem           = require('postcss-bem'),
@@ -101,22 +91,6 @@ gulp.task('js', function() {
 	;
 });
 
-// Minify js
-// gulp.task('uglify', function() {
-// 	return gulp.src('./scripts/app.js')
-// 		.pipe($.uglify())
-// 		.pipe(gulp.dest('./js'))
-// 	;
-// });
-
-// Copy styleguide.js from scripts to js folder
-// because uglify cause error when minify angularjs code (not sure).
-// gulp.task('copy:js', function() {
-// 	return gulp.src('./scripts/styleguide.js')
-// 		.pipe($.copy('./js', {prefix: 1}))
-// 	;
-// });
-
 // Reload browser after lint:js complete
 gulp.task('js-watch', ['js'], browserSync.reload);
 
@@ -134,13 +108,12 @@ gulp.task('bower', ['templates'], function() {
 gulp.task('render', ['bower']);
 
 // Browser sync
-gulp.task('serve', ['css', 'templates', 'templates:partials', 'bower', 'js'], function() {
+gulp.task('serve', ['css', 'templates', 'bower', 'js'], function() {
 	browserSync.init({
 		server: './'
 	});
 
-	gulp.watch('./views/index.jade', ['render']);
-	gulp.watch('./views/components/*.jade', ['templates:partials']);
+	gulp.watch('./views/**/*.jade', ['render']);
 	gulp.watch('./styles/**/*.css', ['css']);
 	gulp.watch('./scripts/**/*.js', ['js']);
 	gulp.watch('./bower.json', ['bower']);
