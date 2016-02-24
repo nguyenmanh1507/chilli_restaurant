@@ -12,6 +12,11 @@
 	padding: calc($meat / 2) 0;
 }
 
+.section-has-bg {
+	background: url('../images/patterns/dark_wood.png') at-2x;
+}
+
+/* Hide text visually but reader machine */
 .sr-only {
   position: absolute;
   width: 1px;
