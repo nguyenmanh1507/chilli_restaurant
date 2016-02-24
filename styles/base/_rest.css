@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  background: $white;
   margin: 0;
   font-family: $font-primary;
   font-size: $base-fz;

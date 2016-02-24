@@ -1,3 +1,5 @@
 .h-special {
+	font-size: 60px;
   font-family: $font-special;
+  font-weight: 300;
 }

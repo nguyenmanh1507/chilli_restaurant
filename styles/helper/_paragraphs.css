@@ -9,3 +9,11 @@
 .text-muted {
   color: $star-dust;
 }
+
+.text-light {
+	color: $white;
+}
+
+.text-center {
+	text-align: center;
+}
