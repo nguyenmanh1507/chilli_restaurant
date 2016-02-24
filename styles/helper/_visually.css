@@ -1,3 +1,17 @@
+/* Div background */
+.dark-bg {
+	background: $color-secondary;
+}
+
+/* Padding */
+.section-padding {
+	padding: calc($meat) 0;
+}
+
+.section-half-padding {
+	padding: calc($meat / 2) 0;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;

@@ -14,7 +14,8 @@ a {
   &:focus,
   &:visited,
   &:hover {
-    color: color($color-primary blackness(40%));
+    /* color: color($color-primary blackness(40%)); */
+    color: $color-primary;
   }
 
   &:hover {

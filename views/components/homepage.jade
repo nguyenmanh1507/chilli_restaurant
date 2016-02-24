@@ -140,7 +140,137 @@ section.section-padding
 	.row
 		.small-12.column
 			.form(method="POST")#reservationForm
-				.form-group
+
+				.form__group
 					lable(for="name")
-					input(type="text" name="name" placeholder="Name:")
+					input(type="text" name="name" class="form__field" id="name" placeholder="Name:")
+				
+				.form__group
+					label(for="datetime")
+					input(type="text" name="datetime" class="form__field" id="datetime" placeholder="Date & time:")
+
+				.form-group
+					label(for="email")
+					input(type="email" name="email" class="form__field" id="email" placeholder="Email:")
+
+				.form-group
+					label(for="phone")
+					input(type="text" name="phone" class="form__field" id="phone" placeholder="Phone:")
+
+				.form-group
+					label(for="peopleNum")
+					input(type="text" name="people-num" class="form__field" id="peopleNum" placeholder="How people")
+
+				.text-center
+					button.btn.btn--primary Book now
+
+section.section-padding
+	h2.h-special About Restaurant
+	p.text-small A premium restaurant wordPress theme
+	.hr-special: i.fa.fa.star
+
+	.row
+		.medium-3.columns
+			article.service
+				.service__icon
+					i.fa.fa-beer
+				h3.service__name Wedding special
+
+		.medium-3.columns
+			article.service
+				.service__icon
+					i.fa.fa-beer
+				h3.service__name Wedding special
+
+		.medium-3.columns
+			article.service
+				.service__icon
+					i.fa.fa-beer
+				h3.service__name Wedding special
+
+		.medium-3.columns
+			article.service
+				.service__icon
+					i.fa.fa-beer
+				h3.service__name Wedding special
+
+section.section-padding
+	h2.h-special Gallery
+
+	section.slider
+		p Slider placeholder
+
+		.text-center
+			a.btn.btn--light
+
+section.section-padding
+	h2.h-special News &amp; Events
+	p.text-small
+		| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minus in repellendus recusandae ullam aut quis ducimus deserunt, deleniti quidem illum molestiae. Est optio voluptas perferendis a illo quidem facilis.
+	.hr-special: i.fa.fa.star
+	
+	.l-masonry
+		.l-masonry__item
+			figure.card
+				a(href="#").card__img-link
+					img(src="http://placehold.it/370x263", alt="")
+
+				figcaption
+					time(datetime="").text-mini 15 July, 2016
+					h2.card__h
+						a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					
+					p.card__text
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ut autem ipsum, perferendis, amet fugiat earum aliquid officiis, sunt doloribus obcaecati quo ad. Error dolor excepturi illo enim, modi maxime.
+
+					p.text-mini
+						| By <a href="#">Kavin</a>, <a href="#">12 Commments</a>
+		
+		.l-masonry__item
+			figure.card
+				a(href="#").card__img-link
+					img(src="http://placehold.it/370x425", alt="")
+
+				figcaption
+					time(datetime="").text-mini 15 July, 2016
+					h2.card__h
+						a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					
+					p.card__text
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ut autem ipsum, perferendis, amet fugiat earum aliquid officiis, sunt doloribus obcaecati quo ad. Error dolor excepturi illo enim, modi maxime.
+
+					p.text-mini
+						| By <a href="#">Kavin</a>, <a href="#">12 Commments</a>
+
+		.l-masonry__item
+			figure.card
+				a(href="#").card__img-link
+					img(src="http://placehold.it/370x263", alt="")
+
+				figcaption
+					time(datetime="").text-mini 15 July, 2016
+					h2.card__h
+						a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					
+					p.card__text
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ut autem ipsum, perferendis, amet fugiat earum aliquid officiis, sunt doloribus obcaecati quo ad. Error dolor excepturi illo enim, modi maxime.
+
+					p.text-mini
+						| By <a href="#">Kavin</a>, <a href="#">12 Commments</a>
+
+	.text-center
+		a.btn.btn--dark View more news
+
+.section.section-padding
+
+	.row.text-center
+		.medium-8.medium-offset-2.column
+			
+			a(href="#").site-logo
+				img(src="images/logo/logo.png", alt="")
+
+			p.text-big Welcome to Chilli restaurant
+
+			p.text-light
+				| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat est quibusdam iure cum nobis libero necessitatibus temporibus, quo accusamus iste?
 
