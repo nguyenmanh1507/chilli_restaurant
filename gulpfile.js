@@ -27,6 +27,7 @@ gulp.task('css', function() {
 			fontMagician  = require('postcss-font-magician'),
 			pxtorem       = require('postcss-pxtorem'),
 			nested        = require('postcss-nested'),
+			at2x          = require('postcss-at2x'),
 			processors    = [
 				precss,
 				bem({
@@ -46,6 +47,7 @@ gulp.task('css', function() {
 					rootValue: 16,
 					mediaQuery: true
 				}),
+				at2x,
 				autoprefixer,
 				// cssnano,
 			]
