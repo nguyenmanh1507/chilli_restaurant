@@ -1,0 +1,24 @@
+@b menu {
+	padding: $meat 0;
+	/* border: 2px dashed $color-secondary; */
+
+	@e dish {
+		margin-top: 25px;
+	}
+
+	@e dish-name {
+		margin: 0;
+		font-family: $font-primary;
+		font-size: 24px;
+		text-transform: none;
+	}
+
+	@e dish-descr {
+		font-style: italic;
+		color: $gray;
+	}
+
+	@e dish-price {
+		font-size: 24px;
+	}
+}

@@ -1,16 +1,19 @@
-header.site-header
-	.dark-bg.section-half-padding
+header.site-header.l-absolute
+	.dark-bg
 		.row
 			.medium-6.columns
-				p.text-muted.text-mini Welcome to Chilli restaurant
+				p.text-muted.text-mini.mt-10 Welcome to Chilli restaurant
 
 			.medium-6.columns
-				ul.list-icon-horizontal.border-left
+				ul.list-icon-horizontal.border-left.text-right
 					li
 						a.text-muted.text-mini(href="#")
 							| <i class="fa fa-phone"></i> (00) 123 456 789
+					li
 						a.text-muted.text-mini(href="#")
 							| <i class="fa fa-envelope"></i> info@companyname.com
+
+					li
 						a.text-muted.text-mini(href="#")
 							| <i class="fa fa-search"></i>
 
@@ -22,8 +25,8 @@ header.site-header
 						| <span class="sr-only">Chilli Restaurant</span><img src="images/logo/logo.png">
 
 			.medium-10.columns
-				nav.site-nav.pull-right
-					ul
+				nav.site-nav
+					ul.text-right
 						li: a(href="#") Home
 						li: a(href="#") About
 						li: a(href="#") Reservation

@@ -13,3 +13,16 @@
   padding: 0 !important;
   margin: 0 !important;
 }
+
+
+.list-icon-horizontal {
+
+	li {
+		display: inline-block;
+		padding: 5px 20px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+	}
+}

@@ -1,0 +1,15 @@
+.site-nav {
+
+	li {
+		display: inline-block;
+
+		&:not(:first-child) {
+			margin-left: 45px;
+		}
+
+		a {
+			color: $white;
+			text-transform: uppercase;
+		}
+	}
+}

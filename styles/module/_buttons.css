@@ -1,0 +1,21 @@
+@b btn {
+	display: inline-block;
+	outline: none;
+	padding: 0.4em 4em;
+
+	@m dark {
+		border: 3px solid $color-secondary;
+		color: $color-secondary;
+		text-transform: uppercase;
+		font-weight: 700;
+
+		&:hover {
+			background: $color-secondary;
+			color: $white;
+		}
+	}
+}
+
+a.btn--dark {
+	color: $color-secondary;
+}
