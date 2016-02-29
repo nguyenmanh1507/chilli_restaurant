@@ -24,3 +24,6 @@
 * [postcss-font-magician](https://github.com/jonathantneal/postcss-font-magician): Magically generate all the __@font-face__ rules.
 * [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem): A plugin for PostCSS that generates rem units from pixel units.
 * [postcss-at2x](https://github.com/simonsmith/postcss-at2x): A port of rework-at2x with some extra touches.
+
+## Notes
+* Carousel plugin: [Slick](http://kenwheeler.github.io/slick/).
