@@ -44,8 +44,8 @@ gulp.task('css', function() {
 				nested,
 				fontMagician,
 				pxtorem({
-					rootValue: 16,
-					mediaQuery: true
+					replace: true,
+					propWhiteList: []
 				}),
 				at2x,
 				autoprefixer,
