@@ -1,6 +1,9 @@
 @b menu {
 	padding: $meat 0;
-	/* border: 2px dashed $color-secondary; */
+
+	.h-special {
+		margin-bottom: 30px;
+	}
 
 	@e dish {
 		margin-top: 25px;

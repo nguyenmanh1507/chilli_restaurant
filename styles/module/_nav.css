@@ -1,4 +1,5 @@
 .site-nav {
+	float: right;
 
 	li {
 		display: inline-block;
