@@ -1,0 +1,32 @@
+@b btn {
+	display: inline-block;
+	padding: 10px 50px;
+	border-radius: 0;
+
+	&:focus {
+		outline: none;
+	}
+
+	@m dark {
+		@mixin border-button $color-secondary;
+
+		&:hover {
+			background: $color-secondary;
+			color: $white;
+		}
+	}
+
+	@m primary {
+		background: $color-primary;
+		color: $white;
+	}
+
+	@m light {
+		@mixin border-button $white;
+
+		&:hover {
+			background: $white;
+			color: $color-secondary;
+		}
+	}
+}

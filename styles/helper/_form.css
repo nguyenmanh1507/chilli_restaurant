@@ -1,0 +1,29 @@
+.form-input {
+	border: none;
+	width: 100%;
+	display: inline-block;
+	outline: none;
+	padding: 10px 20px;
+}
+
+/* Placeholder */
+::-webkit-input-placeholder {
+  color: $color-secondary;
+  font-style: italic;
+  font-size: 14px;
+}
+::-moz-placeholder {
+  color: $color-secondary;
+  font-style: italic;
+  font-size: 14px;
+}
+:-ms-input-placeholder {
+  color: $color-secondary;
+  font-style: italic;
+  font-size: 14px;
+}
+:-moz-placeholder {
+  color: $color-secondary;
+  font-style: italic;
+  font-size: 14px;
+}

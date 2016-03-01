@@ -1,0 +1,42 @@
+.site-logo {
+	margin: 0;
+}
+
+.site-copyright {
+	color: $star-dust;
+	font-size: 14px;
+	text-align: center;
+	margin: 0;
+}
+
+.site-social {
+	text-align: center;
+	margin-top: 20px;
+
+	li {
+		display: inline-block;
+		margin: 10px;
+
+		a {
+			display: inline-block;
+			height: 41px;
+			width: 41px;
+			border-radius: 50%;
+			background: color($white a(10%));
+			line-height: 41px;
+
+			&:hover {
+				background: color($color-primary a(80%));
+				color: $white;
+			}
+		}
+	}
+}
+
+@b site-footer {
+	background: #242424;
+
+	@e alpha {
+		background: color($color-secondary a(50%));
+	}
+}

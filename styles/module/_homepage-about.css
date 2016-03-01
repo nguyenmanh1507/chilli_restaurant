@@ -1,0 +1,26 @@
+@b homepage-about {
+	text-align: center;
+	margin-top: 150px;
+
+	@e frame {
+		border: 9px solid $color-primary;
+		position: relative;
+
+		> img {
+			width: 100%;
+			display: block;
+		}
+	}
+
+	@e frame-inner {
+		height: 224px;
+		width: 224px;
+		background: $color-primary;
+		text-align: center;
+		line-height: 224px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

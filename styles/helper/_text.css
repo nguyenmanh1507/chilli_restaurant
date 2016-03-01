@@ -1,0 +1,22 @@
+/* Heading */
+.intro-h {
+	font-family: $font-special;
+	font-size: 60px;
+	font-weight: normal;
+	margin: 0;
+	line-height: 1;
+}
+
+/* Paragraph */
+.intro-text-mini {
+	font-size: $fz-small;
+	margin: 0 0 20px;
+}
+
+.intro-text {
+	font-weight: 400;
+}
+
+.text-center {
+	text-align: center;
+}

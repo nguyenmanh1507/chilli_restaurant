@@ -1,0 +1,39 @@
+.homepage-menu {
+	text-align: center;
+}
+
+@b menu {
+	margin: 60px 0 70px;
+
+	@e h {
+		margin: 0 0 30px 0;
+		text-transform: uppercase;
+		font-family: $font-primary;
+		font-size: 24px;
+		line-height: 1;
+		text-align: center;
+	}
+
+	@e dish {
+		margin-bottom: 30px;
+	}
+
+	@e dish-name {
+		font-size: 24px;
+		font-weight: normal;
+		font-family: $font-primary;
+		text-transform: none;
+		margin: 0;
+	}
+
+	@e dish-descr {
+		margin: 0;
+		font-size: $fz-small;
+		color: $star-dust;
+		font-style: italic;
+	}
+
+	@e dish-price {
+		font-size: 24px;
+	}
+}

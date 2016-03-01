@@ -1,0 +1,80 @@
+/* Hero */
+@b site-hero {
+	height: 100vh;
+	background: url(../images/hero/hero-bg.jpg) no-repeat left top;
+	background-size: cover;
+	position: relative;
+
+h2,
+p {
+	margin: 0 0 30px;
+}
+
+	&::before {
+		background: color($color-secondary a(60%));
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	@e text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		color: $white;
+	}
+
+	@e text-one {
+		font-size: 24px;
+		font-family: $font-secondary;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	@e text-two {
+		font-size: 72px;
+		font-family: $font-special;
+		font-weight: normal;
+		line-height: 1;
+	}
+
+	@e text-three {
+		text-transform: uppercase;
+		font-size: 24px;
+		position: relative;
+
+		.fa {
+			margin: 0 22px;
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			height: 1px;
+			width: 36px;
+			background: $white;
+			position: absolute;
+			top: 50%;
+		}
+
+		&::before {
+			right: 22px;
+		}
+
+		&::after {
+			left: 22px;
+		}
+	}
+
+	@e text-four {
+		font-size: 18px;
+		font-weight: 700;
+		font-family: $font-secondary;
+		text-transform: uppercase;
+	}
+}

@@ -1,0 +1,32 @@
+@b card {
+	margin: 0 auto 35px;
+
+	@e thumbnail {
+		margin: 0;
+	}
+
+	@e thumbnail-meta {
+		margin-top: 35px;
+	}
+
+	@e datetime {
+		font-size: $fz-small;
+		color: $star-dust;
+	}
+
+	@e title {
+		font-size: $h4-fz;
+		margin: 0;
+		text-transform: uppercase;
+	}
+
+	@e text {
+		margin: 0;
+	}
+
+	@e meta {
+		margin: 35px 0 0;
+		font-size: $fz-small;
+		color: $star-dust;
+	}
+}

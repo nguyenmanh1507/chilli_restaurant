@@ -1,11 +1,11 @@
 //- HERO SECTION
 section.site-hero
 	.site-hero__text
-		p.site-hero__text-one Since 1987
+		p.site-hero__text-one#circleOne Since 1987
 		h2.site-hero__text-two Welcome to Chilli Restaurant
 		p.site-hero__text-three
 			| Coffee <i class="fa fa-star"></i> Bar <i class="fa fa-star"></i> Restaurant
-		p.site-hero__text-four Silver spring, md
+		p.site-hero__text-four#circleTwo Silver spring, md
 
 //- END HERO SECTION
 
@@ -14,28 +14,26 @@ section.padding-medium
 	.row
 		.medium-6.columns
 			.homepage-about
-				h2.hompage-intro-h About Restaurant
-				p.homepage-intro-text-mini A premium restaurant WordPress theme
+				h2.intro-h About Restaurant
+				p.intro-text-mini A premium restaurant WordPress theme
 				.hr-decor
-				p.homepage-intro-text
+				p.intro-text
 					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure dolorem blanditiis, vel, inventore est quasi rerum quia aperiam vero dicta modi molestiae, pariatur consectetur placeat. Cumque porro sed tenetur adipisci.
 		.medium-6.columns
 			.homepage-about__frame
-				img(src="http://placehold.it/448x448", alt="")
+				img(src="images/seafood/showcase-of-seafood-in-the-sea-market.jpg", alt="")
 				.homepage-about__frame-inner
 					img(src="images/logo/logo.png", alt="")
 
 //- END ABOUT SECTION
 
 //- MENU SECTION
-section.padding-medium
-	.row
-		.small-12.column
-			.homepage-menu
-				h2.homepage-intro-h Menu Today
+section.padding-medium.bg--alpha
+	.row.column
+		h2.intro-h.text-center Menu Today
 
 	.row
-		.medium-3.medium-push-1.columns
+		.medium-4.columns
 			article.menu
 				h3.menu__h Breakfast
 				ul.menu__list
@@ -61,7 +59,7 @@ section.padding-medium
 
 		.medium-4.columns
 			article.menu
-				h3.menu__h Breakfast
+				h3.menu__h Lunch
 				ul.menu__list
 					li.menu__dish
 						h4.menu__dish-name Lorem ipsum dolor.
@@ -83,9 +81,9 @@ section.padding-medium
 						p.menu__dish-descr Lorem ipsum dolor sit amet, consectetur adipisicing.
 						em.menu__dish-price 200.000 vnd
 
-		.medium-3.columns
+		.medium-4.columns
 			article.menu
-				h3.menu__h Breakfast
+				h3.menu__h Dinner
 				ul.menu__list
 					li.menu__dish
 						h4.menu__dish-name Lorem ipsum dolor.
@@ -107,51 +105,52 @@ section.padding-medium
 						p.menu__dish-descr Lorem ipsum dolor sit amet, consectetur adipisicing.
 						em.menu__dish-price 200.000 vnd
 
-		.text-center
-			a.btn.btn--dark(href="#") All menu
+	.row.column.text-center
+		a.btn.btn--dark(href="#") All menu
 
 //- END MENU SECTION
 
 //- RESERVATION
-section.padding-medium
-	.row
-		.small-12.column
-			h2.hompage-intro-h Make Online Reservation
+section.padding-medium.bg--beta
+	.row.column.text-center
+			h2.intro-h.text-light Make Online Reservation
 			.hr-decor
-			p.homepage-intro-text Lorem ipsum dolor sit amet, consectetur.
+			p.intro-text.text-light Lorem ipsum dolor sit amet, consectetur.
 
 	.row
-		.small-12.column
+		.medium-6.medium-offset-3.column
 			form.homepage-form(action="/")
 				.form-control
 					label(for="name").sr-only Name
-					input(type="text" name="name").form-input#name
+					input(type="text" name="name" placeholder="Name :").form-input#name
 				.form-control
 					label(for="datetime").sr-only Date and time
-					input(type="text" name="datetime").form-input#datetime
+					input(type="text" name="datetime" placeholder="Date and time :").form-input#datetime
 				.form-control
 					label(for="email").sr-only Email
-					input(type="email" name="email").form-input#email
+					input(type="email" name="email" placeholder="Email :").form-input#email
 				.form-control
 					label(for="phone").sr-only Phone
-					input(type="text" name="phone").form-input#phone
+					input(type="text" name="phone" placeholder="Phone number :").form-input#phone
 				.form-control
 					label(for="people").sr-only How People
-					input(type="text" name="people").form-input#people
-				button(type="submit").btn.btn--primary
+					input(type="text" name="people" placeholder="How many people :").form-input#people
+
+				.text-center
+					button(type="submit").btn.btn--primary Book Now
 
 //- END RESERVATION
 
 //- SERVICES
-section.pading-medium
+section.padding-medium.bg--omega
 	.row
-		.small-12.column
-			h2.homepage-intro-h Our Services
+		.medium-6.medium-offset-3.column.text-center
+			h2.intro-h Our Services
 			.hr-decor
-			p.homepage-intro-text
+			p.intro-text
 				| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, ad.
 
-	.row
+	.row.service-wrap
 		.medium-3.columns
 			article.service
 				.service__icon
@@ -179,16 +178,26 @@ section.pading-medium
 //- END SERVICES
 
 //- GALLERY
-section.padding-medium
+section.padding-medium.bg--beta
 	.row
-		.small-12.column
-			h2.homepage-intro-h Gallery
+		.medium-6.medium-offset-3.column.text-center
+			h2.intro-h.text-light Gallery
 
-	.gallery
-		h3 Gallery placeholder
+	#gallery.gallery
+		.gallery__item
+			img(src="images/seafood/assortment-of-seafood.jpg", alt="")
+		.gallery__item
+			img(src="images/seafood/close-up-of-delicious-grilled-seafood-platter.jpg", alt="")
+		.gallery__item
+			img(src="images/seafood/delicious-portion-of-fresh-salmon-fillet-with-aromatic-herbs-spices-and-vegetables-healthy.jpg", alt="")
+		.gallery__item
+			img(src="images/seafood/fresh-fish-and-other-seafood-isolated-on-white.jpg", alt="")
+		.gallery__item
+			img(src="images/seafood/seafood-platter.jpg", alt="")
+		.gallery__item
+			img(src="images/seafood/shrimps-and-mussels.jpg", alt="")
 
-	.row
-		.small-12.column
+	.row.column.text-center
 			a.btn.btn--light(href="#") View more
 
 //- END GALLERY
@@ -196,61 +205,61 @@ section.padding-medium
 //- NEWS & EVENTS
 section.padding-medium
 	.row
-		.small-12.column
-			h2.hompage-intro-h News &amp; Events
+		.medium-6.medium-offset-3.column.text-center
+			h2.intro-h News &amp; Events
 			.hr-decor
-			p.homepage-intro-text
+			p.intro-text
 				| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolore deserunt necessitatibus dicta quas aut unde corrupti quisquam dignissimos dolor.
 
-			.row
-				.small-12.column
-					.l-masonry
-						.l-masonry__item
-							article.card
-								figure.card__thumbnail
-									a(href="#").card__thumbnail-link
-										img(src="http://placehold.it/370x263", alt="").card__thumbnail-img
-								figcaption.card__thumbnail-meta
-									time(datetime="07-15-1991").card__datetime
+	.row
+		.small-12.column
+			.l-masonry
+				.l-masonry__item
+					article.card
+						figure.card__thumbnail
+							a(href="#").card__thumbnail-link
+								img(src="images/event/event-1.jpg", alt="").card__thumbnail-img
+							figcaption.card__thumbnail-meta
+								time(datetime="07-15-1991").card__datetime 15 July 1991
 
-								h3.card__title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum.
+						h3.card__title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum.
 
-								p.card__text
-									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure omnis quam vitae necessitatibus! Accusantium eos earum aliquam facere animi aperiam nam nihil doloribus, magni harum nulla similique laboriosam eveniet eius!
-								p.card__meta
-									| By <a href="#">Kavin</a>, <a href="#">12 Comments</a>
+						p.card__text
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure omnis quam vitae necessitatibus!
+						p.card__meta
+							| By <a href="#">Kavin</a>, <a href="#">12 Comments</a>
 
-						.l-masonry__item
-							article.card
-								figure.card__thumbnail
-									a(href="#").card__thumbnail-link
-										img(src="http://placehold.it/370x263", alt="").card__thumbnail-img
-								figcaption.card__thumbnail-meta
-									time(datetime="07-15-1991").card__datetime
+				.l-masonry__item
+					article.card
+						figure.card__thumbnail
+							a(href="#").card__thumbnail-link
+								img(src="images/event/event-2.jpg", alt="").card__thumbnail-img
+							figcaption.card__thumbnail-meta
+								time(datetime="07-15-1991").card__datetime 15 July 1991
 
-								h3.card__title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum.
+						h3.card__title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum.
 
-								p.card__text
-									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure omnis quam vitae necessitatibus! Accusantium eos earum aliquam facere animi aperiam nam nihil doloribus, magni harum nulla similique laboriosam eveniet eius!
-								p.card__meta
-									| By <a href="#">Kavin</a>, <a href="#">12 Comments</a>
-									
-						.l-masonry__item
-							article.card
-								figure.card__thumbnail
-									a(href="#").card__thumbnail-link
-										img(src="http://placehold.it/370x263", alt="").card__thumbnail-img
-								figcaption.card__thumbnail-meta
-									time(datetime="07-15-1991").card__datetime
+						p.card__text
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure omnis quam vitae necessitatibus! Accusantium eos earum aliquam facere animi aperiam nam nihil doloribus.
+						p.card__meta
+							| By <a href="#">Kavin</a>, <a href="#">12 Comments</a>
+							
+				.l-masonry__item
+					article.card
+						figure.card__thumbnail
+							a(href="#").card__thumbnail-link
+								img(src="images/event/event-3.jpg", alt="").card__thumbnail-img
+							figcaption.card__thumbnail-meta
+								time(datetime="07-15-1991").card__datetime 15 July 1991
 
-								h3.card__title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum.
+						h3.card__title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum.
 
-								p.card__text
-									| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure omnis quam vitae necessitatibus! Accusantium eos earum aliquam facere animi aperiam nam nihil doloribus, magni harum nulla similique laboriosam eveniet eius!
-								p.card__meta
-									| By <a href="#">Kavin</a>, <a href="#">12 Comments</a>
+						p.card__text
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure omnis quam vitae necessitatibus! Accusantium.
+						p.card__meta
+							| By <a href="#">Kavin</a>, <a href="#">12 Comments</a>
 
-						.row
-							.small-12.column.text-center
-								a(href="#").btn.btn--dark View more news
-									
+	.row
+		.small-12.column.text-center
+			a(href="#").btn.btn--dark View more news
+								

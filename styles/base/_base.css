@@ -1,0 +1,75 @@
+html {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+*,
+&::before,
+&::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: $font-primary;
+	font-size: 1em;
+	line-height: $base-lh;
+}
+
+/* Heading */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-secondary;
+}
+
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: $h1-fz;
+}
+
+h2 {
+	font-size: $h2-fz;
+}
+
+h3 {
+	font-size: $h3-fz;
+}
+
+h4 {
+	font-size: $h4-fz;
+}
+
+h5 {
+	font-size: $h5-fz;
+}
+
+h6 {
+	font-size: $h6-fz;
+}
+
+/* Lists */
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Anchor */
+a {
+	text-decoration: none;
+	color: $color-primary;
+	transition: all 0.35s ease-in;
+}

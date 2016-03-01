@@ -1,0 +1,9 @@
+@b l-masonry {
+ column-width: 300px;
+ column-gap: 10px;
+
+ @e item {
+ 	display: inline-block;
+ 	margin: 30px 0;
+ }
+}

@@ -1,0 +1,45 @@
+.padding-medium {
+	padding: calc($meat * 4) 0;
+}
+
+.padding-small {
+	padding: calc($meat * 2) 0;
+}
+
+.hr-decor {
+	height: 11px;
+	width: 322px;
+	margin: 0 auto;
+	background: url(../images/patterns/hr-decor.png) no-repeat left top;
+}
+
+@b bg {
+
+	@m alpha {
+		background: $white-smoke;
+	}
+
+	@m beta {
+		background: url(../images/patterns/zwartevilt.png) at-2x;
+	}
+
+	@m omega {
+		background: $white-smoke;
+	}
+}
+
+.text-light {
+	color: $white;
+}
+
+/* Screen reader */
+.sr-only {
+	position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}

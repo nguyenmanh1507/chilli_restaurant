@@ -1,11 +1,12 @@
 //- FOOTER
 footer.site-footer
-	.section-has-bg
+	.bg--beta.padding-small
 		.row
-			.medium-6.medium-offset-2.column.text-center
+			.medium-6.medium-offset-3.column.text-center
 				h2.site-logo
 					a(href="#")
 						img(src="images/logo/logo.png", alt="Chilli restaurant")
+				h4.text-light Welcome to Chilli Restaurant
 				p.text-light
 					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat tenetur aut fugit cum perferendis, exercitationem suscipit amet, itaque voluptate quam nesciunt, reiciendis dolore consequuntur, eveniet ipsa dolorem neque optio deleniti.
 
@@ -17,21 +18,21 @@ footer.site-footer
 
 			.medium-4.columns
 	
-	.site-footer__beta
+	.site-footer__beta.padding-small
 		.row
-			.medium-4.medium-offset-4.column
+			.medium-6.medium-offset-3.column
 				p.site-copyright
-					| Copyright &copy; 2015 CHILLI Restaurant. Theme by Nootheme
+					| Copyright &copy; 2015 CHILLI Restaurant. Made with <i class="fa fa-heart"></i> by <a href="#" target="_blank">NgManh</a>.
 
 				ul.site-social
 					li
-						a(href="#")
+						a(href="#" target="_blank")
 							i.fa.fa-facebook
 					li
-						a(href="#")
+						a(href="#" target="_blank")
 							i.fa.fa-instagram
 					li
-						a(href="#")
+						a(href="#" target="_blank")
 							i.fa.fa-youtube
 
 //- END FOOTER
@@ -39,4 +40,5 @@ footer.site-footer
 script(src="bower_components/jquery/dist/jquery.js")
 // bower:js
 // endbower
+script(src="js/jquery.arctext.js")
 script(src="scripts/app.js")
