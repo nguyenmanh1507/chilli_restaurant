@@ -36,7 +36,7 @@ var app = (function($) {
 	};
 
 	textCircle = function(el, dir) {
-		var dir = dir || undefined;
+		dir = dir || undefined;
 		$(el).arctext({
 			radius: 350,
 			dir: dir
