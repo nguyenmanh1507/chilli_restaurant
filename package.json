@@ -36,6 +36,7 @@
     "jshint-stylish": "^2.1.0",
     "postcss-at2x": "^2.0.0",
     "postcss-bem": "^0.4.1",
+    "postcss-custom-media": "^5.0.1",
     "postcss-font-magician": "^1.4.0",
     "postcss-nested": "^1.0.0",
     "postcss-pxtorem": "^3.3.1",
