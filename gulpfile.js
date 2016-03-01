@@ -28,6 +28,7 @@ gulp.task('css', function() {
 			pxtorem       = require('postcss-pxtorem'),
 			nested        = require('postcss-nested'),
 			at2x          = require('postcss-at2x'),
+			customMedia   = require('postcss-custom-media'),
 			processors    = [
 				precss,
 				bem({
@@ -47,6 +48,7 @@ gulp.task('css', function() {
 					replace: true,
 					propWhiteList: []
 				}),
+				customMedia,
 				at2x,
 				autoprefixer,
 				// cssnano,
