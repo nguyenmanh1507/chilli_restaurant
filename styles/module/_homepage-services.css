@@ -1,5 +1,9 @@
 .service-wrap {
 	margin-top: 100px;
+
+	> .columns:last-child > .service {
+		margin-bottom: 0;
+	}
 }
 
 @b service {
@@ -8,7 +12,7 @@
 	max-width: 270px;
 	width: 100%;
 	padding: 90px 15px 30px;
-	margin: 0 auto 100px;
+	margin: 0 auto;
 	position: relative;
 
 	@e icon {
@@ -31,5 +35,9 @@
 
 	@e name {
 		margin: 0;
+	}
+
+	@media (--medium-down) {
+		margin-bottom: 100px;
 	}
 }
