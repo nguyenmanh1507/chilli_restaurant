@@ -10,7 +10,7 @@ var gulp            = require('gulp'),
 
 // Compile Jade to HTML
 gulp.task('templates', function() {
-	return gulp.src('./views/index.jade')
+	return gulp.src('./views/*.jade')
 		.pipe($.plumber())
 		.pipe($.jade({
 			pretty: true
