@@ -6,12 +6,16 @@
 	padding: calc($meat * 2) 0;
 }
 
-.hr-decor {
+@b hr-decor {
 	height: 11px;
 	max-width: 322px;
 	width: 100%;
 	margin: 0 auto;
 	background: url(../images/patterns/hr-decor.png) no-repeat center center;
+
+	@m light {
+		background-image: url(../images/patterns/hr-decor-light.png); 
+	}
 }
 
 @b bg {

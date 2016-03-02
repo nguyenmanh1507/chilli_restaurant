@@ -1,0 +1,12 @@
+.site-banner {
+	padding: 150px 0 30px;
+
+	.intro-h {
+		font-size: 48px;
+	}
+
+	.hr-decor,
+	.breadcrumb {
+		margin-top: 10px;
+	}
+}

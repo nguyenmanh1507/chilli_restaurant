@@ -1,6 +1,8 @@
 @import "header";
 @import "nav";
 @import "hero";
+@import "site-banner";
+@import "breadcrumb";
 @import "homepage-about";
 @import "homepage-menu";
 @import "homepage-form";
