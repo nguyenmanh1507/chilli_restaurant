@@ -37,6 +37,51 @@
 	background: #242424;
 
 	@e alpha {
-		background: color($color-secondary a(50%));
+		background: $mine-shaft;
+	}
+
+	@e h {
+		margin: 0 0 20px;
+		color: $white;
+		font-size: 20px;
+
+		+ p {
+			margin: 0 0 20px;
+			/* line-height: 1.3; */
+			color: $star-dust;
+		}
+	}
+
+	@e list-flex {
+
+		> li {
+			display: flex;
+			color: $star-dust;
+			margin-bottom: 10px;
+
+			span {
+				flex-grow: 1;
+			}
+
+			em {
+				color: $white;
+				font-style: normal;
+			}
+		}
+	}
+
+	@e list {
+		color: $star-dust;
+
+		> li {
+			margin-bottom: 10px;
+			display: flex;
+		}
+
+		.fa {
+			color: $white;
+			margin-right: 10px;
+			line-height: 1.8;
+		}
 	}
 }

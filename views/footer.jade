@@ -10,19 +10,54 @@ footer.site-footer
 				p.text-light
 					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat tenetur aut fugit cum perferendis, exercitationem suscipit amet, itaque voluptate quam nesciunt, reiciendis dolore consequuntur, eveniet ipsa dolorem neque optio deleniti.
 
-	.site-footer__alpha
+	.site-footer__alpha.padding-small
 		.row
 			.medium-4.columns
+				h2.site-footer__h Newletter
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores maxime, atque ad error ab. Aut suscipit, sapiente aliquid similique quidem hic natus.
+
+				form(action="/").site-footer-form
+					.form-control.form-control--oneline
+						label(for="newletter").sr-only your email
+						input(type="email" name="email" placeholder="example@gmail.com").form-input#email
+						button(type="submit").btn.btn--primary
+							| <span class="sr-only">Register</span> <i class="fa fa-chevron-right"></i>
 				
 			.medium-4.columns
+				h2.site-footer__h Open Hours
+				ul.site-footer__list-flex
+					li
+						span Mondays
+						em Closed
+					li
+						span Tue - Fri
+						em 10am - 12am
+					li
+						span Sat - Sun
+						em 7am - 1am
+					li
+						span Public Holidays
+						em 12pm - 12am
 
 			.medium-4.columns
+				h2.site-footer__h Address
+				ul.site-footer__list
+					li
+						i.fa.fa-map-marker
+						span 1600 Blue Amphitheatre Parkway, Mountain View, CA 94043, USA.
+					li
+						i.fa.fa-phone
+						span (212) 620 5682 - (375) 620 5682
+					li
+						i.fa.fa-envelope
+						span support@example.com
 	
 	.site-footer__beta.padding-small
 		.row
 			.medium-6.medium-offset-3.column
 				p.site-copyright
-					| Copyright &copy; 2015 CHILLI Restaurant. Made by <a href="#" target="_blank">NgManh</a> with <i class="fa fa-heart"></i>.
+					| Copyright &copy; 2015 CHILLI Restaurant. Made by <a href="#" target="_blank">NgManh</a> with <i class="fa fa-music"></i> and <i class="fa fa-beer"></i>.
 
 				ul.site-social
 					li
