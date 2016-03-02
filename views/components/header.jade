@@ -19,13 +19,17 @@ header.site-header
 
 	.site-header__beta
 		.row
-			.medium-3.columns
+			.small-6.medium-6.large-3.columns
 				h1.site-name
 					a(href="#")
 						img(src="images/logo/logo.png", alt="")
 
-			.medium-9.columns
-				nav.site-nav
+			.small-6.medium-6.columns.hide-for-large
+				a(href="#").site-nav-icon#hamburger
+					| Menu <i class="fa fa-bars"></i>
+
+			.large-9.columns
+				nav.site-nav#siteNav
 					ul
 						li.active
 							a(href="#") Home
@@ -41,4 +45,6 @@ header.site-header
 							a(href="#") Blog
 						li
 							a(href="#") Contact
+
+
 

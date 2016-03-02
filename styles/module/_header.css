@@ -12,6 +12,10 @@
 
 	@e beta {
 		background: color($color-secondary a(50%));
+
+		&.is-active {
+			background: $color-secondary;
+		}
 	}
 
 	@e alpha-text {
@@ -66,45 +70,3 @@
 	line-height: 1;
 }
 
-.site-nav {
-	float: right;
-	margin: 30px 0;
-
-	ul li {
-		display: inline-block;
-		position: relative;
-
-		&:not(:last-child) {
-			margin-right: 40px;
-		}
-
-		&.active::before {
-			opacity: 1;
-		}
-
-		&::before {
-			content: '';
-			position: absolute;
-			bottom: -5px;
-			left: 0;
-			height: 2px;
-			width: 100%;
-			background: $white;
-			opacity: 0;
-			transition: opacity 0.35s ease-in;
-		}
-
-		&:hover::before {
-			opacity: 1;
-		}
-
-		a {
-			color: $white;
-			text-transform: uppercase;
-		}
-	}
-
-	@media (--large-down) {
-		display: none;
-	}
-}

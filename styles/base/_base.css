@@ -72,4 +72,8 @@ a {
 	text-decoration: none;
 	color: $color-primary;
 	transition: all 0.35s ease-in;
+
+	&:hover {
+		color: color($color-primary blackness(30%));
+	}
 }

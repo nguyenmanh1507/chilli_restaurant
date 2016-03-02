@@ -34,12 +34,12 @@ $color-secondary: $black;
 $color-tertiary: $white-smoke;
 
 /* Media queries */
-@custom-media --small-only (max-width: 39.9375rem);
+@custom-media --small-only (max-width: 39.9375rem); /* 639px */
 /* @custom-media --medium-up (min-width: 40rem); */
-@custom-media --medium-down (max-width: 40rem);
-@custom-media --medium-only (min-width: 40rem) and (max-width: 63.9375rem);
+@custom-media --medium-down (max-width: 40rem); /* 640 */
+@custom-media --medium-only (min-width: 40rem) and (max-width: 63.9375rem); /* 640 - 1023px */
 /* @custom-media --large-up (min-width: 64rem); */
-@custom-media --large-down (max-width: 64rem);
+@custom-media --large-down (max-width: 64rem); /* 1024px */
 @custom-media --large-only (min-width: 64rem) and (max-width: 74.9375rem);
 
 /* MISC */

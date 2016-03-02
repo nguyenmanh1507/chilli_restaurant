@@ -8,9 +8,10 @@
 
 .hr-decor {
 	height: 11px;
-	width: 322px;
+	max-width: 322px;
+	width: 100%;
 	margin: 0 auto;
-	background: url(../images/patterns/hr-decor.png) no-repeat left top;
+	background: url(../images/patterns/hr-decor.png) no-repeat center center;
 }
 
 @b bg {
@@ -30,6 +31,12 @@
 
 .text-light {
 	color: $white;
+}
+
+
+
+.disable-scroll {
+	overflow: hidden !important;
 }
 
 /* Screen reader */

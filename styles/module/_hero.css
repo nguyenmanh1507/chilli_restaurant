@@ -27,6 +27,10 @@ p {
 		transform: translate(-50%, -50%);
 		text-align: center;
 		color: $white;
+
+		@media (--large-down) {
+			width: 90%;
+		}
 	}
 
 	@e text-one {
@@ -34,6 +38,10 @@ p {
 		font-family: $font-secondary;
 		text-transform: uppercase;
 		font-weight: 700;
+
+		@media (--large-down) {
+			font-size: 18px;
+		}
 	}
 
 	@e text-two {
@@ -41,12 +49,17 @@ p {
 		font-family: $font-special;
 		font-weight: normal;
 		line-height: 1;
+
+		@media (--large-down) {
+			font-size: 48px;
+		}
 	}
 
 	@e text-three {
 		text-transform: uppercase;
 		font-size: 24px;
 		position: relative;
+		padding: 0 10px;
 
 		.fa {
 			margin: 0 22px;
@@ -60,14 +73,22 @@ p {
 			background: $white;
 			position: absolute;
 			top: 50%;
+
+			@media (--large-down) {
+				display: none;
+			}
 		}
 
 		&::before {
-			right: 22px;
+			left: 100%;
 		}
 
 		&::after {
-			left: 22px;
+			right: 100%;
+		}
+
+		@media (--large-down) {
+			font-size: 18px;
 		}
 	}
 
