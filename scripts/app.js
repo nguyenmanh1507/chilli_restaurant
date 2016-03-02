@@ -71,8 +71,11 @@ var app = (function($) {
 	};
 
 	init = function() {
+
 		mobileNav('#hamburger');
-		carousel('#gallery');
+
+		if($(window).slick) carousel('#gallery');
+		
 		textCircle('#circleOne');
 		textCircle('#circleTwo', -2);
 	};
