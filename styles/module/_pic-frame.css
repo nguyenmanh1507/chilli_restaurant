@@ -1,0 +1,28 @@
+@b pic-frame {
+	background: $white-smoke;
+	margin: 0 auto;
+	max-width: 270px;
+	width: 100%;
+
+	@e meta {
+		padding: 15px;
+		text-align: center;
+	}
+
+	@e name {
+		margin: 0;
+		font-size: 20px;
+		text-transform: uppercase;
+		line-height: 1.2;
+	}
+
+	@e role {
+		color: $star-dust;
+		font-size: 14px;
+		margin: 0 0 15px;
+	}
+
+	@e social-link {
+		margin: 5px 14px 0;
+	}
+}

@@ -1,0 +1,27 @@
+//- RESERVATION FORM
+section.padding-medium
+	.row
+		.medium-6.medium-offset-3.column
+			p.text-center Booking a table online is easy and takes just a couple of minutes.
+			form.homepage-form(action="/")
+				.form-control.form-control--gray
+					label(for="name").sr-only Name
+					input(type="text" name="name" placeholder="Name :").form-input#name
+				.form-control.form-control--gray
+					label(for="datetime").sr-only Date and time
+					input(type="text" name="datetime" placeholder="Date and time :").form-input#datetime
+				.form-control.form-control--gray
+					label(for="email").sr-only Email
+					input(type="email" name="email" placeholder="Email :").form-input#email
+				.form-control.form-control--gray
+					label(for="phone").sr-only Phone
+					input(type="text" name="phone" placeholder="Phone number :").form-input#phone
+				.form-control.form-control--gray
+					label(for="people").sr-only How People
+					input(type="text" name="people" placeholder="How many people :").form-input#people
+
+				.text-center
+					button(type="submit").btn.btn--primary Book Now
+//- END RESERVATION FORM
+
+//- 

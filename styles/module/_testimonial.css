@@ -1,0 +1,63 @@
+@b bq {
+	text-align: center;
+	outline: none;
+
+	@e content {
+		color: $star-dust;
+		font-style: italic;
+		margin-bottom: 50px;
+	}
+
+	@e img {
+		height: 109px;
+		width: 109px;
+		border: 10px solid $white;
+		border-radius: 4px;
+		margin: 0 auto 50px;
+		transform: rotateZ(45deg);
+
+		overflow: hidden;
+
+		img {
+			height: 140px;
+			width: 140px;
+			max-width: 140px;
+			display: block;
+			transform: rotateZ(-45deg) translateY(-40px);
+		}
+	}
+
+	@e cite {
+		font-style: normal;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	@e cite-job {
+		margin: 0;
+		font-size: 12px;
+	}
+}
+
+@b btn-slick {
+	font-size: 48px;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+
+	outline: none;
+
+	z-index: 10;
+
+	@m prev {
+		left: 0;
+	}
+
+	@m next {
+		right: 0;
+	}
+}
+
+.slick-slider {
+	margin-bottom: 0;
+}

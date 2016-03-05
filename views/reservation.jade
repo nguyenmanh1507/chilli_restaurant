@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="en")
+	//- HEAD
+	include ./components/head.jade
+
+	body
+
+		//- HEADER
+		include ./components/header.jade
+
+		//- BANNER
+		- var bannerText = "Reservation"
+		- var breadcrumbText = 'Reservation'
+
+		include ./components/site-banner.jade
+
+		//- PAGE ABOUT
+		include ./components/page-reservation.jade
+		
+		//- FOOTER
+		include ./components/footer.jade
