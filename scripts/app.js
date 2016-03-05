@@ -4,6 +4,7 @@ var app = (function($) {
 	var carousel,
 			textCircle,
 			mobileNav,
+			bqCarousel,
 			$body = $('body'),
 			$siteNav = $('#siteNav'),
 			$navIcon = $('#hamburger i.fa'),
@@ -37,6 +38,15 @@ var app = (function($) {
 					}
 				}
 			]
+		});
+	};
+
+	bqCarousel = function(el) {
+		$(el).slick({
+			autoplay: true,
+			autoplaySpeed: 5000,
+			prevArrow: '<button type="button" class="btn-slick btn-slick--prev"><i class="fa fa-angle-left"></i></button>',
+			nextArrow: '<button type="button" class="btn-slick btn-slick--next"><i class="fa fa-angle-right"></i></button>'
 		});
 	};
 
@@ -74,7 +84,10 @@ var app = (function($) {
 
 		mobileNav('#hamburger');
 
-		if($(window).slick) carousel('#gallery');
+		if($(window).slick) {
+			carousel('#gallery');
+			bqCarousel('#blockquote');
+		}
 		
 		textCircle('#circleOne');
 		textCircle('#circleTwo', -2);
