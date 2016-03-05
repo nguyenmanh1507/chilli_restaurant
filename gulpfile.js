@@ -100,7 +100,7 @@ gulp.task('js-watch', ['js'], browserSync.reload);
 
 // Auto insert link or script tag
 gulp.task('bower', ['templates'], function() {
-	return gulp.src('./index.html')
+	return gulp.src('./*.html')
 		.pipe(wiredep({
 			exclude: ['jquery']
 		}))
