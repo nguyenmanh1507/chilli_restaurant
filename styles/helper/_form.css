@@ -15,6 +15,10 @@
       padding: 10px 25px;
     }
   }
+
+  @m gray .form-input {
+    background: $white-smoke;
+  }
 }
 
 .form-input {

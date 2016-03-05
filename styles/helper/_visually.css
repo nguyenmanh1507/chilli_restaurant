@@ -27,10 +27,6 @@
 	@m beta {
 		background: url(../images/patterns/zwartevilt.png) at-2x;
 	}
-
-	@m omega {
-		background: $white-smoke;
-	}
 }
 
 .text-light {

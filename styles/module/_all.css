@@ -7,6 +7,8 @@
 @import "homepage-menu";
 @import "homepage-form";
 @import "homepage-services";
+@import "pic-frame";
+@import "testimonial";
 @import "carousel";
 @import "card";
 @import "footer";
