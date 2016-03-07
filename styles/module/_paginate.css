@@ -1,0 +1,33 @@
+.paginate {
+
+	.page-numbers {
+		background: $white;
+		border: 1px solid $color-secondary;
+		color: $color-secondary;
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		line-height: 40px;
+		font-size: 18px;
+
+		&.current {
+			border-color: $color-primary;
+		}
+
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+
+	}
+	
+	a.page-numbers {
+
+		&:focus,
+		&:hover {
+			background: $color-primary;
+			color: $white;
+			border-color: $color-primary;
+		}
+	}
+}

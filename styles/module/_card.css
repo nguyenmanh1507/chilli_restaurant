@@ -30,7 +30,7 @@
 		color: $star-dust;
 	}
 
-	@m stack:not(:last-of-type) {
+	@m stack {
 		border-bottom: 1px solid color($star-dust a(20%));
 		padding-bottom: 45px;
 		margin-bottom: 45px;
