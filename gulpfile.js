@@ -122,7 +122,7 @@ gulp.task('serve', ['css', 'templates', 'bower', 'js'], function() {
 	gulp.watch('./scripts/**/*.js', ['js']);
 	gulp.watch('./bower.json', ['bower']);
 	gulp.watch('./*.html').on('change', browserSync.reload);
-	gulp.watch('./partials/*.html').on('change', browserSync.reload);
+	// gulp.watch('./partials/*.html').on('change', browserSync.reload);
 });
 
 // Default task
