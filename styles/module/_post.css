@@ -1,0 +1,53 @@
+@b post {
+
+	@e time {
+		color: $star-dust;
+		font-size: 12px;
+	}
+
+	@e title {
+		font-size: 32px;
+		margin: 0;
+		line-height: 1.2;
+	}
+
+	@e tags i.fa {
+		margin-right: 10px;
+	}
+
+	figure {
+		margin: 0;
+		text-align: center;
+	}
+
+	blockquote {
+		border-left: 3px solid $color-primary;
+		color: $star-dust;
+		margin: 0 0 15px;
+		padding: 10px 10px 10px 30px;
+	}
+
+	ul {
+		list-style: disc;
+		margin-left: 15px;
+	}
+
+	table {
+		border: 1px solid $star-dust;
+
+		th {
+			text-align: left;
+		}
+
+		th, td {
+			border: 1px solid $star-dust;
+			padding: 10px;
+		}
+	}
+
+	@media (--large-down) {
+		margin-bottom: 40px;
+		padding-bottom: 40px;
+		border-bottom: 1px solid color($star-dust a(50%));
+	}
+}

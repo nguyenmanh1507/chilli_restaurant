@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+html(lang="en")
+	//- HEAD
+	include ./components/head.jade
+
+	body
+
+		//- HEADER
+		include ./components/header.jade
+
+		//- BANNER
+		- var bannerText = "Blog"
+		- var breadcrumbText = 'Blog detail'
+
+		include ./components/site-banner.jade
+		
+		.row.padding-small
+			//- BLOG
+			.large-8.columns
+				include ./components/single.jade
+
+			//- SIDEBAR
+			.large-4.columns
+				include ./components/sidebar.jade
+		
+		//- FOOTER
+		include ./components/footer.jade
