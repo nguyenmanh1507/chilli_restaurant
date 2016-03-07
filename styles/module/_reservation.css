@@ -1,0 +1,52 @@
+.reservation-wrap {
+	background: url(../images/reservation/restaurant.jpg) no-repeat left top;
+	background-size: cover;
+	position: relative;
+
+	&::before {
+		content: '';
+		background: color($color-secondary a(50%));
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+	}
+
+	&::after {
+		content: '';
+		background: $white;
+		width: 1px;
+		height: 80%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		@media (--medium-down) {
+			display: none;
+		}
+	}
+
+	@media (--medium-down) {
+		> .row .columns:first-child {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+@b reservation {
+	z-index: 10;
+	position: relative;
+
+	@e title {
+		text-transform: uppercase;
+		font-size: 24px;
+		margin: 0;
+	}
+
+	@e cta {
+		font-size: 48px;
+		font-weight: 700;
+		color: $white;
+	}
+}

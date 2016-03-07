@@ -1,0 +1,47 @@
+aside.sidebar.widget-area
+	section.widget.widget_search
+		form(action="/").site-footer-form
+			.form-control.form-control--oneline.form-control--gray
+				label(for="search").sr-only Search keyword
+				input(type="text" name="search" placeholder="Search keyword...").form-input#search
+				button(type="submit").btn.btn--primary
+					| <span class="sr-only">Register</span> <i class="fa fa-chevron-right"></i>
+
+	section.widget.widget_categories
+		h2.widget-title Categories
+		ul
+			li.cat-item: a(href="#") Events
+			li.cat-item: a(href="#") Parties
+			li.cat-item: a(href="#") Seafood
+			li.cat-item: a(href="#") Monthly Deal
+			li.cat-item: a(href="#") News
+
+	section.widget.widget_events
+		h2.widget-title Popular Events
+		ul
+			li.event-item
+				.event-frame
+					a(href="#").event-link
+						.event-thumbnail
+							img(src="http://placehold.it/300x140", alt="")
+						.event-meta
+							h3.event-title Jain's Birthday
+							time(datetime="").event-time july 17th, 2015
+
+			li.event-item
+				.event-frame
+					a(href="#").event-link
+						.event-thumbnail
+							img(src="http://placehold.it/300x140", alt="")
+						.event-meta
+							h3.event-title Jain's Birthday
+							time(datetime="").event-time july 17th, 2015
+
+			li.event-item
+				.event-frame
+					a(href="#").event-link
+						.event-thumbnail
+							img(src="http://placehold.it/300x140", alt="")
+						.event-meta
+							h3.event-title Jain's Birthday
+							time(datetime="").event-time july 17th, 2015

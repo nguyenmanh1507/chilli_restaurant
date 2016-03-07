@@ -25,8 +25,14 @@
 	}
 
 	@e meta {
-		margin: 35px 0 0;
+		margin: 20px 0 0;
 		font-size: $fz-small;
 		color: $star-dust;
+	}
+
+	@m stack:not(:last-of-type) {
+		border-bottom: 1px solid color($star-dust a(20%));
+		padding-bottom: 45px;
+		margin-bottom: 45px;
 	}
 }

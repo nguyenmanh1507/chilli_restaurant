@@ -8,7 +8,9 @@
 @import "homepage-form";
 @import "homepage-services";
 @import "pic-frame";
+@import "reservation";
 @import "testimonial";
 @import "carousel";
 @import "card";
+@import "sidebar";
 @import "footer";
