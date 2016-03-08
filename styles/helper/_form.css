@@ -29,6 +29,10 @@
 	padding: 10px 20px;
 }
 
+textarea.form-input {
+  min-height: 160px;
+}
+
 /* Placeholder */
 ::-webkit-input-placeholder {
   color: $color-secondary;

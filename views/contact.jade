@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="en")
+	//- HEAD
+	include ./components/head.jade
+
+	body
+
+		//- HEADER
+		include ./components/header.jade
+
+		//- BANNER
+		- var bannerText = "Contact Us"
+		- var breadcrumbText = 'Contact Us'
+
+		include ./components/site-banner.jade
+		
+		//- CONTACT
+		include ./components/page-contact.jade
+		
+		- var gMap = true
+		//- FOOTER
+		include ./components/footer.jade

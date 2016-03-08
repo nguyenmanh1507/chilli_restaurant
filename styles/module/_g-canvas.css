@@ -1,0 +1,6 @@
+.g-canvas {
+	background: $white-smoke;
+	height: 400px;
+	max-width: 2400px;
+	margin: 0 auto;
+}
