@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="en")
+	//- HEAD
+	include ./components/head.jade
+
+	body
+
+		//- HEADER
+		include ./components/header.jade
+
+		//- BANNER
+		- var bannerText = "Menu"
+		- var breadcrumbText = 'Menu'
+
+		include ./components/site-banner.jade
+		
+		//- MENU
+		include ./components/page-menu.jade
+
+		//- FOOTER
+		include ./components/footer.jade

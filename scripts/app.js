@@ -86,6 +86,9 @@ var app = (function($) {
 
 		if($(window).slick) {
 			carousel('#gallery');
+			carousel('#breakfast');
+			carousel('#lunch');
+			carousel('#dinner');
 			bqCarousel('#blockquote');
 		}
 		

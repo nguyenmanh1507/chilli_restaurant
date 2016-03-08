@@ -2,3 +2,7 @@
 	overflow-x: hidden;
 	margin: 80px 0;
 }
+
+.menu-dish {
+	overflow: hidden;
+}
