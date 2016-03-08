@@ -25,4 +25,8 @@
 	@e social-link {
 		margin: 5px 14px 0;
 	}
+
+	@media (--medium-down) {
+		margin-bottom: 40px;
+	}
 }

@@ -1,6 +1,7 @@
 /* Hero */
 @b site-hero {
 	height: 100vh;
+	min-height: 540px;
 	background: url(../images/hero/hero-bg.jpg) no-repeat left top;
 	background-size: cover;
 	position: relative;
@@ -30,6 +31,11 @@ p {
 
 		@media (--large-down) {
 			width: 90%;
+		}
+
+		@media (--medium-down) {
+			top: 90%;
+			transform: translate(-50%, -90%);
 		}
 	}
 

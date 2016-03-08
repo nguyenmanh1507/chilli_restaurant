@@ -2,17 +2,18 @@
 section.padding-medium
 	.row
 		.medium-6.columns
+			.homepage-about__frame
+				img(src="images/seafood/showcase-of-seafood-in-the-sea-market.jpg", alt="")
+				.homepage-about__frame-inner
+					img(src="images/logo/logo.png", alt="")
+						
+		.medium-6.columns
 			.homepage-about
 				h2.intro-h About Restaurant
 				p.intro-text-mini A premium restaurant WordPress theme
 				.hr-decor
 				p.intro-text
 					| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure dolorem blanditiis, vel, inventore est quasi rerum quia aperiam vero dicta modi molestiae, pariatur consectetur placeat. Cumque porro sed tenetur adipisci.
-		.medium-6.columns
-			.homepage-about__frame
-				img(src="images/seafood/showcase-of-seafood-in-the-sea-market.jpg", alt="")
-				.homepage-about__frame-inner
-					img(src="images/logo/logo.png", alt="")
 
 //- END ABOUT SECTION
 
@@ -53,6 +54,7 @@ section.padding-medium.bg--alpha
 //- END SERVICES
 
 //- STAFF
+- var imgSrc = './images/staff/'
 section.padding-medium
 	.row
 		.medium-6.medium-offset-3.column.text-center
@@ -64,7 +66,7 @@ section.padding-medium
 	.row
 		.medium-6.large-3.columns
 			figure.pic-frame
-				img(src="http://placehold.it/270x414", alt="Staff").pic-frame__imgi
+				img(src="#{imgSrc}staff-1.jpg", alt="Staff").pic-frame__imgi
 				figcaption.pic-frame__meta
 					h3.pic-frame__name Lorem ipsum dolor sit.
 					p.pic-frame__role Chef
@@ -76,7 +78,7 @@ section.padding-medium
 
 		.medium-6.large-3.columns
 			figure.pic-frame
-				img(src="http://placehold.it/270x414", alt="Staff").pic-frame__imgi
+				img(src="#{imgSrc}staff-2.jpg", alt="Staff").pic-frame__imgi
 				figcaption.pic-frame__meta
 					h3.pic-frame__name Lorem ipsum dolor sit.
 					p.pic-frame__role Chef
@@ -88,7 +90,7 @@ section.padding-medium
 
 		.medium-6.large-3.columns
 			figure.pic-frame
-				img(src="http://placehold.it/270x414", alt="Staff").pic-frame__imgi
+				img(src="#{imgSrc}staff-3.jpg", alt="Staff").pic-frame__imgi
 				figcaption.pic-frame__meta
 					h3.pic-frame__name Lorem ipsum dolor sit.
 					p.pic-frame__role Chef
@@ -100,7 +102,7 @@ section.padding-medium
 
 		.medium-6.large-3.columns
 			figure.pic-frame
-				img(src="http://placehold.it/270x414", alt="Staff").pic-frame__imgi
+				img(src="#{imgSrc}staff-4.jpg", alt="Staff").pic-frame__imgi
 				figcaption.pic-frame__meta
 					h3.pic-frame__name Lorem ipsum dolor sit.
 					p.pic-frame__role Chef
@@ -127,7 +129,7 @@ section.padding-medium.bg--alpha
 						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quod a quasi porro ipsa delectus modi itaque sunt voluptate vitae.
 
 					.bq__img
-						img(src="http://placehold.it/140x140", alt="")
+						img(src="./images/testimonial/avatar-1.jpg", alt="")
 
 					cite.bq__cite John Smith
 					p.bq__cite-job Web Designer
@@ -137,7 +139,7 @@ section.padding-medium.bg--alpha
 						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ad error cumque nihil dolores asperiores est modi, quia explicabo adipisci nisi nesciunt repellat repellendus inventore placeat ea nam iste rem ducimus, distinctio voluptatum.
 
 					.bq__img
-						img(src="http://placehold.it/140x140", alt="")
+						img(src="./images/testimonial/avatar-2.jpg", alt="")
 
 					cite.bq__cite John Smith
 					p.bq__cite-job Web Designer

@@ -3,6 +3,14 @@
 
 	.intro-h {
 		font-size: 48px;
+
+		@media (--medium-down) {
+			font-size: 32px;
+		}
+	}
+
+	@media (--medium-down) {
+		padding-top: 200px;
 	}
 
 	.hr-decor,

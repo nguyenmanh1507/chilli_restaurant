@@ -51,7 +51,7 @@
 	}
 
 	.event-meta {
-		background: color($color-secondary a(50%));
+		background: color($color-secondary a(80%));
 		position: absolute;
 		padding: 10px;
 		left: 0;
@@ -67,5 +67,11 @@
 	.event-time {
 		font-size: 14px;
 		font-style: italic;
+	}
+}
+
+@media (--medium-down) {
+	.sidebar {
+		margin-top: 60px;
 	}
 }

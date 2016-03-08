@@ -45,6 +45,7 @@
 	}
 
 	@e cta {
+		word-break: break-word;
 		font-size: 48px;
 		font-weight: 700;
 		color: $white;

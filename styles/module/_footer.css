@@ -56,6 +56,7 @@
 
 		> li {
 			display: flex;
+			flex-wrap: wrap;
 			color: $star-dust;
 			margin-bottom: 10px;
 
@@ -83,5 +84,12 @@
 			margin-right: 10px;
 			line-height: 1.8;
 		}
+	}
+}
+
+@media (--medium-down) {
+	.site-footer-form,
+	.site-footer__list-flex {
+		margin-bottom: 40px;
 	}
 }
