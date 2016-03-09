@@ -96,7 +96,11 @@ var app = (function($) {
 		textCircle('#circleTwo', -2);
 
 		if($(window).mixItUp) {
-			$('#galleryContainer').mixItUp();
+			$('#galleryContainer').mixItUp({
+				selectors: {
+					filter: '.filter__item'
+				}
+			});
 		}
 
 	};
