@@ -1,15 +1,52 @@
 section.padding-small
 	.row.column.text-center
 		.filter
-			button(data-filter="").filter__item All
-			button(data-filter="").filter__item Seafood
-			button(data-filter="").filter__item Restaurant
-			button(data-filter="").filter__item Hobos
-			button(data-filter="").filter__item Totes
+			button(data-filter="all").filter__item.filter All
+			button(data-filter=".seafood").filter__item.filter Seafood
+			button(data-filter=".restaurant").filter__item.filter Restaurant
+			button(data-filter=".fruit").filter__item.filter Fruit
+			button(data-filter=".dinner").filter__item.filter Dinner
 
 	#galleryContainer.gallery-flex
-		- var n = 1
-		while n < 13
-			a(href="http://placehold.it/800x690", data-lightbox="gallery", data-title="My example title").gallery-flex__item
-				img(src="http://placehold.it/400x345", alt="#{n++}")
+
+		a(href="./images/gallery/15.jpg", data-lightbox="gallery", data-title="My example title").gallery-flex__item.mix.seafood
+			img(src="./images/gallery/1.jpg", alt="Gallery")
+		
+		a(href="./images/gallery/15.jpg", data-lightbox="gallery", data-title="My example title").gallery-flex__item.mix.restaurant
+			img(src="./images/gallery/2.jpg", alt="Gallery")
+
+		a(href="./images/gallery/15.jpg", data-lightbox="gallery", data-title="My example title").gallery-flex__item.mix.fruit
+			img(src="./images/gallery/3.jpg", alt="Gallery")
+
+		a(href="./images/gallery/15.jpg", data-lightbox="gallery", data-title="My example title").gallery-flex__item.mix.dinner
+			img(src="./images/gallery/4.jpg", alt="Gallery")
+
+		a(href="./images/gallery/15.jpg", data-lightbox="gallery", data-title="My example title").gallery-flex__item.mix.seafood
+			img(src="./images/gallery/5.jpg", alt="Gallery")
+		
+		a(href="./images/gallery/15.jpg", data-lightbox="gallery", data-title="My example title").gallery-flex__item.mix.seafood
+			img(src="./images/gallery/6.jpg", alt="Gallery")
+
+		a(href="./images/gallery/15.jpg", data-lightbox="gallery", data-title="My example title").gallery-flex__item.mix.dinner
+			img(src="./images/gallery/7.jpg", alt="Gallery")
+
+		a(href="./images/gallery/15.jpg", data-lightbox="gallery", data-title="My example title").gallery-flex__item.mix.fruit
+			img(src="./images/gallery/8.jpg", alt="Gallery")
+
+		a(href="./images/gallery/15.jpg", data-lightbox="gallery", data-title="My example title").gallery-flex__item.mix.restaurant
+			img(src="./images/gallery/9.jpg", alt="Gallery")
+		
+		a(href="./images/gallery/15.jpg", data-lightbox="gallery", data-title="My example title").gallery-flex__item.mix.fruit
+			img(src="./images/gallery/10.jpg", alt="Gallery")
+
+		a(href="./images/gallery/15.jpg", data-lightbox="gallery", data-title="My example title").gallery-flex__item.mix.dinner
+			img(src="./images/gallery/11.jpg", alt="Gallery")
+
+		a(href="./images/gallery/15.jpg", data-lightbox="gallery", data-title="My example title").gallery-flex__item.mix.restaurant
+			img(src="./images/gallery/12.jpg", alt="Gallery")
+
+	.row.column.text-center.padding-small
+		a(href="#").btn.btn--dark Load more
+
+
 

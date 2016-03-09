@@ -3,3 +3,34 @@
 	flex-wrap: wrap;
 	justify-content: center;
 }
+
+@b filter {
+	margin-bottom: 40px;
+
+	@e item {
+		text-transform: uppercase;
+		margin: 0 0 0 15px;
+		transition: color 0.35s ease;
+
+		&:not(:last-child)::after {
+			content: '\2013';
+			margin-left: 15px;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&:hover {
+			color: $color-primary;
+		}
+
+		&:hover::after {
+			color: $color-secondary;
+		}
+	}
+}
+
+#galleryContainer .mix {
+	display: none;
+}

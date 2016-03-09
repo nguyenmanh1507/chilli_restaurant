@@ -94,6 +94,11 @@ var app = (function($) {
 		
 		textCircle('#circleOne');
 		textCircle('#circleTwo', -2);
+
+		if($(window).mixItUp) {
+			$('#galleryContainer').mixItUp();
+		}
+
 	};
 
 	return {
