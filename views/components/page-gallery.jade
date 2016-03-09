@@ -2,7 +2,14 @@ section.padding-small
 	.row.column.text-center
 		.filter
 			button(data-filter="").filter__item All
-			button(data-filter="").filter__item Clutchestt
-			button(data-filter="").filter__item Crossbody
+			button(data-filter="").filter__item Seafood
+			button(data-filter="").filter__item Restaurant
 			button(data-filter="").filter__item Hobos
 			button(data-filter="").filter__item Totes
+
+	#galleryContainer.gallery-flex
+		- var n = 1
+		while n < 13
+			a(href="http://placehold.it/800x690", data-lightbox="gallery", data-title="My example title").gallery-flex__item
+				img(src="http://placehold.it/400x345", alt="#{n++}")
+

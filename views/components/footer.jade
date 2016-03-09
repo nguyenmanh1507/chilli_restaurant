@@ -77,8 +77,13 @@ script(src="bower_components/jquery/dist/jquery.js")
 // bower:js
 // endbower
 script(src="scripts/jquery.arctext.js")
+	
+if filter
+	script(src="bower_components/mixitup/src/jquery.mixitup.js")
+
 script(src="scripts/app.js")
 
 if gMap
 	script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2rhI_EktwXhqendX1yRgpC6mHQvpp8Zo&callback=initMap&signed_in=true", async, defer)
 	script(src="scripts/googlemap.js")
+
