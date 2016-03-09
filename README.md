@@ -28,3 +28,5 @@
 
 ## Notes
 * Carousel plugin: [Slick](http://kenwheeler.github.io/slick/).
+* Filter: [mixitup](https://mixitup.kunkalabs.com/).
+* Lightbox: [lightbox2](http://lokeshdhakar.com/projects/lightbox2/).
