@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="en")
+	//- HEAD
+	include ./components/head.jade
+
+	body
+
+		//- HEADER
+		include ./components/header.jade
+
+		//- BANNER
+		- var bannerText = "Event detail"
+		- var breadcrumbText = 'Lorem ipsum dolor sit.'
+
+		include ./components/site-banner.jade
+		
+		//- EVENTS SINGLE
+		include ./components/event-single.jade
+		
+		//- FOOTER
+		include ./components/footer.jade

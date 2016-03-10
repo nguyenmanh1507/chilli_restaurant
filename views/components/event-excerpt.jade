@@ -1,0 +1,30 @@
+section.padding-small
+
+	.row.column
+		- var eventUrl = "./event-detail.html"
+		- var n = 1
+		while n < 5
+			article.event
+				a(href="#{eventUrl}").event__thumbnail
+					img(src="http://placehold.it/500x314", alt="#{n++}")
+
+				.event-excerpt-wrap
+					header
+						h2.event__title: a(href="#{eventUrl}") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis!
+						.event__meta
+							span
+								i.fa.fa-clock-o
+								time(datetime="") 7:00 am - 11:45 am
+							span
+								i.fa.fa-calendar-o
+								time(datetime="") 01 Nov 2015
+							span
+								| <i class="fa fa-map-marker"></i> California
+
+					p
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur veniam adipisci recusandae repellendus minima maiores tenetur! Possimus iste a, nemo eum nulla quae. Incidunt rerum nemo harum odit eveniet, veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus iste numquam fugiat maiores, necessitatibus aperiam ratione maxime ducimus cum commodi, aut.
+
+					a(href="#{eventUrl}").btn.btn--primary View more
+
+			.padding-small.hr-decor
+

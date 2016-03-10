@@ -33,11 +33,20 @@
 	color: $white;
 }
 
-
-
 .disable-scroll {
 	overflow: hidden !important;
 }
+
+.cf:before,
+.cf:after {
+  content: '';
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
 
 /* Screen reader */
 .sr-only {
