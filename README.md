@@ -30,3 +30,6 @@
 * Carousel plugin: [Slick](http://kenwheeler.github.io/slick/).
 * Filter: [mixitup](https://mixitup.kunkalabs.com/).
 * Lightbox: [lightbox2](http://lokeshdhakar.com/projects/lightbox2/).
+* Form validate: [Parsley](http://parsleyjs.org/). - not install
+* Datepicker: [Rome](http://bevacqua.github.io/rome/). - not install
+* Send form: [Formspree](http://formspree.io/). - not install

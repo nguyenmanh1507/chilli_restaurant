@@ -212,19 +212,19 @@ section.padding-medium
 			.hr-decor
 			p.intro-text
 				| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolore deserunt necessitatibus dicta quas aut unde corrupti quisquam dignissimos dolor.
-
+	- var url = "blog-detail.html"
 	.row
 		.small-12.column
 			.l-masonry
 				.l-masonry__item
 					article.card
 						figure.card__thumbnail
-							a(href="#").card__thumbnail-link
+							a(href="#{url}").card__thumbnail-link
 								img(src="images/event/event-1.jpg", alt="").card__thumbnail-img
 							figcaption.card__thumbnail-meta
 								time(datetime="07-15-1991").card__datetime 15 July 1991
 
-						h3.card__title: a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum.
+						h3.card__title: a(href="#{url}") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum.
 
 						p.card__text
 							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure omnis quam vitae necessitatibus!
@@ -234,12 +234,12 @@ section.padding-medium
 				.l-masonry__item
 					article.card
 						figure.card__thumbnail
-							a(href="#").card__thumbnail-link
+							a(href="#{url}").card__thumbnail-link
 								img(src="images/event/event-2.jpg", alt="").card__thumbnail-img
 							figcaption.card__thumbnail-meta
 								time(datetime="07-15-1991").card__datetime 15 July 1991
 
-						h3.card__title: a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum.
+						h3.card__title: a(href="#{url}") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum.
 
 						p.card__text
 							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure omnis quam vitae necessitatibus! Accusantium eos earum aliquam facere animi aperiam nam nihil doloribus.
@@ -249,12 +249,12 @@ section.padding-medium
 				.l-masonry__item
 					article.card
 						figure.card__thumbnail
-							a(href="#").card__thumbnail-link
+							a(href="#{url}").card__thumbnail-link
 								img(src="images/event/event-3.jpg", alt="").card__thumbnail-img
 							figcaption.card__thumbnail-meta
 								time(datetime="07-15-1991").card__datetime 15 July 1991
 
-						h3.card__title: a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum.
+						h3.card__title: a(href="#{url}") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum.
 
 						p.card__text
 							| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure omnis quam vitae necessitatibus! Accusantium.
@@ -263,5 +263,5 @@ section.padding-medium
 
 	.row
 		.small-12.column.text-center
-			a(href="#").btn.btn--dark View more news
+			a(href="blog.html").btn.btn--dark View more news
 								
