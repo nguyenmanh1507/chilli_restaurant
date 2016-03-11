@@ -1,0 +1,19 @@
+/* Apricot plugin's css */
+
+.apricot {
+	background: #ff514a;
+	border-radius: 50%;
+	color: white;
+	font-size: 24px;
+	display: inline-block;
+	text-align: center;
+	position: fixed;
+	right: 3%;
+	bottom: 3%;
+	height: 60px;
+	width: 60px;
+
+	line-height: 60px;
+
+	z-index: 1000;
+}

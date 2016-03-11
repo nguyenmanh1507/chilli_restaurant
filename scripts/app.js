@@ -103,6 +103,8 @@ var app = (function($) {
 			});
 		}
 
+		$('#apricot').apricot();
+
 	};
 
 	return {
