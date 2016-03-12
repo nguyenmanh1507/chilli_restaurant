@@ -4,8 +4,7 @@
 	// scroll to top plugin
 	$.fn.apricot = function(options) {
 		var defaultOptions = {
-			duration: 300,
-			target: '#apricot'
+			duration: 300
 		};
 
 		options = $.extend(defaultOptions,options || {});
