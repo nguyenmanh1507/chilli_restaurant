@@ -13,7 +13,7 @@
 	height: 60px;
 	width: 60px;
 
-	opacity: 0.5;
+	opacity: 0;
 	visibility: hidden;
 
 	line-height: 60px;
@@ -26,6 +26,7 @@
 	}
 
 	&.is-visible {
+		opacity: 0.5;
 		visibility: visible;
 	}
 }

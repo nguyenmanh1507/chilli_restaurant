@@ -103,7 +103,25 @@ var app = (function($) {
 			});
 		}
 
-		$('#apricot').apricot();
+		// Scroll to top
+
+		var $apricot = $('#apricot');
+
+		$apricot.apricot();
+
+		$(window).scroll(function() {
+
+			var $this = $(this),
+				windowHeight = $this.height()
+			;
+
+			if($this.scrollTop() >= windowHeight) {
+				$apricot.addClass('is-visible');
+			} else {
+				$apricot.removeClass('is-visible');
+			}
+
+		});
 
 	};
 

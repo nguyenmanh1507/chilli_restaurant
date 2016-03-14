@@ -7,16 +7,16 @@
 			duration: 300
 		};
 
-		options = $.extend(defaultOptions,options || {});
+		options = $.extend(defaultOptions, options || {});
 		
 		return this.on('click', function() {
-			var $this = $(this);
 
 			$('html, body').animate({
 				scrollTop: 0
 			}, options.duration);
 
 			return false;
+
 		})
 		;
 
