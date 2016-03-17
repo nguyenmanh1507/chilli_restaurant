@@ -18,4 +18,6 @@
 @import "g-canvas";
 @import "page-gallery";
 @import "events";
+@import "modal";
+@import "searchform";
 @import "footer";

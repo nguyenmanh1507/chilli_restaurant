@@ -1,0 +1,35 @@
+.modal {
+	background: color($color-secondary a(90%));
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	z-index: 20;
+
+	visibility: hidden;
+	opacity: 0;
+
+	&.is-show {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+.modal-inner {
+	position: relative;
+	overflow-y: auto;
+	min-height: 100vh;
+}
+
+.modal-content {
+	position: absolute;
+	padding: 15px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 30;
+	max-width: 600px;
+	width: 100%;
+}

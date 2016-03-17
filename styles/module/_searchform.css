@@ -1,0 +1,42 @@
+.search-form {
+	display: flex;
+	flex-wrap: wrap;
+
+	[type="search"] {
+		border: none;
+		background: transparent;
+		border-bottom: 2px solid $white;
+		color: $white;
+		flex-grow: 1;
+		font-size: 30px;
+		outline: none;
+		padding: 10px;
+
+		&::-webkit-input-placeholder {
+		  color: color($white blackness(50%));
+		  font-size: 30px;
+		}
+		&::-moz-placeholder {
+		  color: color($white blackness(50%));
+		  font-size: 30px;
+		}
+		&:-ms-input-placeholder {
+		  color: color($white blackness(50%));
+		  font-size: 30px;
+		}
+		&:-moz-placeholder {
+		  color: color($white blackness(50%));
+		  font-size: 30px;
+		}
+	}
+
+	[type="submit"] {
+		font-size: 38px;
+		color: $white;
+		outline: none;
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+}
