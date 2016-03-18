@@ -11,6 +11,7 @@
 		font-size: 30px;
 		outline: none;
 		padding: 10px;
+		margin-bottom: 20px;
 
 		&::-webkit-input-placeholder {
 		  color: color($white blackness(50%));

@@ -5,6 +5,7 @@ var app = (function($) {
 			textCircle,
 			mobileNav,
 			bqCarousel,
+			modalForm,
 			$body = $('body'),
 			$siteNav = $('#siteNav'),
 			$navIcon = $('#hamburger i.fa'),
@@ -80,6 +81,28 @@ var app = (function($) {
 		});
 	};
 
+	modalForm = function(el, modalId) {
+
+		$(el).on('click', function() {
+			$(modalId).addClass('is-show');
+			$('#s').focus();
+
+			$('body').addClass('is-n-scroll');
+
+			return false;
+		});
+
+		$('#closeModal').on('click', function() {
+
+			$(modalId).removeClass('is-show');
+			$('body').removeClass('is-n-scroll');
+
+			return false;
+
+		})
+
+	};
+
 	init = function() {
 
 		mobileNav('#hamburger');
@@ -102,6 +125,9 @@ var app = (function($) {
 				}
 			});
 		}
+
+		// Modal Form
+		modalForm('#formTrigger', '#modal');
 
 		// Scroll to top
 
