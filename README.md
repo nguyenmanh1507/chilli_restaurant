@@ -18,7 +18,6 @@
 
 * [autoprefixer](https://github.com/postcss/autoprefixer): Parse CSS and add vendor prefixes to rules by Can I Use.
 * [postcss-bem](https://github.com/ileri/postcss-bem): PostCSS plugin implementing BEM as at-rules.
-* [postcss-scss](https://github.com/jonathantneal/precss): tool that allows you to use Sass-like markup in your CSS files.
 * [cssnano](https://github.com/ben-eb/cssnano): A modular minifier, built on top of the PostCSS ecosystem.
 * [stylelint](https://github.com/stylelint/stylelint): A mighty, modern CSS linter that helps you enforce consistent conventions and avoid errors in your stylesheets.
 * [postcss-font-magician](https://github.com/jonathantneal/postcss-font-magician): Magically generate all the __@font-face__ rules.
