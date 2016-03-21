@@ -99,7 +99,7 @@ var app = (function($) {
 
 			return false;
 
-		})
+		});
 
 	};
 

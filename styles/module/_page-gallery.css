@@ -2,6 +2,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
+	a {
+		transition: none;
+	}
 }
 
 @b filter {
