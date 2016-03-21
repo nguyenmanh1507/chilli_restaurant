@@ -115,8 +115,8 @@ var app = (function($) {
 			bqCarousel('#blockquote');
 		}
 		
-		textCircle('#circleOne');
-		textCircle('#circleTwo', -2);
+		// textCircle('#circleOne');
+		// textCircle('#circleTwo', -2);
 
 		if($(window).mixItUp) {
 			$('#galleryContainer').mixItUp({

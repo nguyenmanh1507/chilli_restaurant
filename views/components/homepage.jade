@@ -1,11 +1,13 @@
 //- HERO SECTION
 section.site-hero
 	.site-hero__text
-		p.site-hero__text-one#circleOne Since 1990
-		h2.site-hero__text-two Welcome to Chilli Restaurant
+		p.site-hero__text-one#circleOne
+			| <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+		h2.site-hero__text-two Nhà hàng Làng Chài
 		p.site-hero__text-three
-			| Coffee <i class="fa fa-star"></i> Bar <i class="fa fa-star"></i> Restaurant
-		p.site-hero__text-four#circleTwo Silver spring, md
+			| Ăn uống <i class="fa fa-star"></i> Phòng nghỉ <i class="fa fa-star"></i> Tổ chức tham quan
+		p.site-hero__text-four#circleTwo
+			| <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
 
 //- END HERO SECTION
 
@@ -20,7 +22,7 @@ section.padding-medium
 
 		.medium-6.columns
 			.homepage-about
-				h2.intro-h About Restaurant
+				h2.intro-h Thông tin nhà hàng
 				p.intro-text-mini A premium restaurant WordPress theme
 				.hr-decor
 				p.intro-text
@@ -31,12 +33,12 @@ section.padding-medium
 //- MENU SECTION
 section.padding-medium.bg--alpha
 	.row.column
-		h2.intro-h.text-center Menu Today
+		h2.intro-h.text-center Menu
 
 	.row
 		.medium-4.columns
 			article.menu
-				h3.menu__h Breakfast
+				h3.menu__h Bữa sáng
 				ul.menu__list
 					li.menu__dish
 						h4.menu__dish-name Lorem ipsum dolor.
@@ -60,7 +62,7 @@ section.padding-medium.bg--alpha
 
 		.medium-4.columns
 			article.menu
-				h3.menu__h Lunch
+				h3.menu__h Bữa trưa
 				ul.menu__list
 					li.menu__dish
 						h4.menu__dish-name Lorem ipsum dolor.
@@ -84,7 +86,7 @@ section.padding-medium.bg--alpha
 
 		.medium-4.columns
 			article.menu
-				h3.menu__h Dinner
+				h3.menu__h Bữa tối
 				ul.menu__list
 					li.menu__dish
 						h4.menu__dish-name Lorem ipsum dolor.
@@ -107,7 +109,7 @@ section.padding-medium.bg--alpha
 						em.menu__dish-price 200.000 vnd
 
 	.row.column.text-center
-		a.btn.btn--dark(href="#") All menu
+		a.btn.btn--dark(href="./menu.html") Xem tất cả menu
 
 //- END MENU SECTION
 
@@ -115,7 +117,7 @@ section.padding-medium.bg--alpha
 section.padding-medium.bg--beta
 	.row.column
 		.medium-6.medium-offset-3.column.text-center
-			h2.intro-h.text-light Make Online Reservation
+			h2.intro-h.text-light Book bàn online
 			.hr-decor.hr-decor--light
 			p.intro-text.text-light Lorem ipsum dolor sit amet, consectetur.
 
@@ -123,23 +125,23 @@ section.padding-medium.bg--beta
 		.medium-6.medium-offset-3.column
 			form.homepage-form(action="/")
 				.form-control
-					label(for="name").sr-only Name
-					input(type="text" name="name" placeholder="Name :").form-input#name
+					label(for="name").sr-only Tên
+					input(type="text" name="name" placeholder="Họ tên :").form-input#name
 				.form-control
-					label(for="datetime").sr-only Date and time
-					input(type="text" name="datetime" placeholder="Date and time :").form-input#datetime
+					label(for="datetime").sr-only Thời gian
+					input(type="text" name="datetime" placeholder="Thời gian :").form-input#datetime
 				.form-control
 					label(for="email").sr-only Email
 					input(type="email" name="email" placeholder="Email :").form-input#email
 				.form-control
-					label(for="phone").sr-only Phone
-					input(type="text" name="phone" placeholder="Phone number :").form-input#phone
+					label(for="phone").sr-only Điện thoại
+					input(type="text" name="phone" placeholder="Điện thoại :").form-input#phone
 				.form-control
-					label(for="people").sr-only How People
-					input(type="text" name="people" placeholder="How many people :").form-input#people
+					label(for="people").sr-only Số người
+					input(type="text" name="people" placeholder="Số người :").form-input#people
 
 				.text-center
-					button(type="submit").btn.btn--primary Book Now
+					button(type="submit").btn.btn--primary Đặt bàn
 
 //- END RESERVATION
 
@@ -147,7 +149,7 @@ section.padding-medium.bg--beta
 section.padding-medium.bg--alpha
 	.row
 		.medium-6.medium-offset-3.column.text-center
-			h2.intro-h Our Services
+			h2.intro-h Dich vu
 			.hr-decor
 			p.intro-text
 				| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, ad.
@@ -157,13 +159,13 @@ section.padding-medium.bg--alpha
 			article.service
 				.service__icon
 					i.fa.fa-anchor
-				h3.service__name Wedding special
+				h3.service__name Đám cưới
 
 		.medium-3.columns
 			article.service
 				.service__icon
 					i.fa.fa-anchor
-				h3.service__name Birthday party
+				h3.service__name Sinh nhật
 
 		.medium-3.columns
 			article.service
@@ -200,7 +202,7 @@ section.padding-medium.bg--beta
 			img(src="images/seafood/shrimps-and-mussels.jpg", alt="")
 
 	.row.column.text-center
-			a.btn.btn--light(href="./gallery.html") View more
+			a.btn.btn--light(href="./gallery.html") Xem thêm
 
 //- END GALLERY
 
@@ -208,7 +210,7 @@ section.padding-medium.bg--beta
 section.padding-medium
 	.row
 		.medium-6.medium-offset-3.column.text-center
-			h2.intro-h News &amp; Events
+			h2.intro-h Blog
 			.hr-decor
 			p.intro-text
 				| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolore deserunt necessitatibus dicta quas aut unde corrupti quisquam dignissimos dolor.
@@ -263,5 +265,5 @@ section.padding-medium
 
 	.row
 		.small-12.column.text-center
-			a(href="blog.html").btn.btn--dark View more news
+			a(href="blog.html").btn.btn--dark Xem thêm
 								
