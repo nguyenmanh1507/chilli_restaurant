@@ -130,7 +130,6 @@ var app = (function($) {
 		modalForm('#formTrigger', '#modal');
 
 		// Scroll to top
-
 		var $apricot = $('#apricot');
 
 		$apricot.apricot();
@@ -147,6 +146,16 @@ var app = (function($) {
 				$apricot.removeClass('is-visible');
 			}
 
+		});
+
+		// DateTime Picker
+
+		// Set specific time
+		$.datetimepicker.setLocale('vi');
+
+		$('#datetime').datetimepicker({
+			minDate: Date.now(),
+			format: 'd/F/Y - H:i'
 		});
 
 	};

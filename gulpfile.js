@@ -102,7 +102,7 @@ gulp.task('js-watch', ['js'], browserSync.reload);
 gulp.task('bower', ['templates'], function() {
 	return gulp.src('./*.html')
 		.pipe(wiredep({
-			exclude: ['jquery']
+			exclude: ['jquery', 'php-date-formatter']
 		}))
 		.pipe(gulp.dest('./'))
 	;

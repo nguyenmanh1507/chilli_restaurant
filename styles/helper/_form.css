@@ -54,3 +54,33 @@ textarea.form-input {
   font-style: italic;
   font-size: 14px;
 }
+
+/* Validation styles */
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  box-shadow: inset 0 0 0 2px $mantis;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  box-shadow: inset 0 0 0 2px $color-primary;
+}
+
+.parsley-errors-list {
+  background: $color-primary;
+  color: $white;
+  margin: 0 0 3px;
+  padding: 5px;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+
+  transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}

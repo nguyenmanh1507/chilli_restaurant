@@ -121,22 +121,23 @@ section.padding-medium.bg--beta
 
 	.row
 		.medium-6.medium-offset-3.column
-			form.homepage-form(action="/")
+			form.homepage-form(action="https://formspree.io/nguyenmanh1507@gmail.com" method="POST" data-parsley-validate)
 				.form-control
 					label(for="name").sr-only Name
-					input(type="text" name="name" placeholder="Name :").form-input#name
+					input(type="text" name="name" placeholder="Name :" minlength="2" maxlength="50" required).form-input#name
 				.form-control
 					label(for="datetime").sr-only Date and time
-					input(type="text" name="datetime" placeholder="Date and time :").form-input#datetime
+					input(type="text" name="datetime" placeholder="Date and time :" required).form-input#datetime
 				.form-control
 					label(for="email").sr-only Email
-					input(type="email" name="email" placeholder="Email :").form-input#email
+					input(type="email" name="email" placeholder="Email :" minlength="4" maxlength="255" required).form-input#email
 				.form-control
 					label(for="phone").sr-only Phone
-					input(type="text" name="phone" placeholder="Phone number :").form-input#phone
+					input(type="tel" name="phone" placeholder="Phone number :" data-parsley-type="number").form-input#phone
+				input(type="text" name="_gotcha" style="display:none")
 				.form-control
 					label(for="people").sr-only How People
-					input(type="text" name="people" placeholder="How many people :").form-input#people
+					input(type="number" name="people" placeholder="How many people :" min="1" max="1000").form-input#people
 
 				.text-center
 					button(type="submit").btn.btn--primary Book Now
