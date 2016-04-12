@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="en")
+	//- HEAD
+	include ./components/head.jade
+
+	body
+
+		//- HEADER
+		include ./components/header.jade
+
+		//- BANNER
+		- var bannerText = "Shop"
+		- var breadcrumbText = 'Shop'
+
+		include ./components/site-banner.jade
+		
+		//- SHOP
+		
+		- var gMap = true
+		//- FOOTER
+		include ./components/footer.jade
