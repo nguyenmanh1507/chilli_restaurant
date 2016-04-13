@@ -1,0 +1,71 @@
+section.padding-small
+  .row
+    .medium-9.medium-push-3.columns
+      h1 Main content
+      
+      .row
+        span All Products
+        select.products-filter#pFilter
+          option(value="all") All Products
+          option(value="new") New Products
+          option(value="atoz") A - Z
+          option(value="extoch") $$$ - $
+          option(value="chtoex") $ - $$$
+          
+      .row
+        section.products-list
+          figure.product-item
+            .product-item__thumbnail
+              a(href="#")
+                img(src="http://placehold.it/270x302", alt="")
+              a.product-item__cta(href="#"): i.fa.fa-shopping-cart
+            figcaption.product-item__detail
+              a(href="#") Succulent Peppered Steak
+              div
+                span.product-item__price $18.00
+                ul.product-item__meta
+                  li
+                    a(href="#"): i.fa.fa-search
+                  li
+                    a(href="#"): i.fa.fa-heart
+              
+      
+    .medium-3.medium-pull-9.columns
+      section.widget.widget_categories
+        h2.widget-title Categories
+        ul
+          li.cat-item: a(href="#") Desserts
+          li.cat-item: a(href="#") Drinks
+          li.cat-item: a(href="#") Coctails
+          li.cat-item: a(href="#") Wines
+          li.cat-item: a(href="#") Main Dishes
+          li.cat-item: a(href="#") Fast Food
+          li.cat-item: a(href="#") Grilled
+          
+      section.widget.widget_filter
+        h2.widget-title Price Products
+        p Placeholder for filter
+        
+      section.widget
+        h2.widget-title Top Rate Products
+        
+        - var i = 1
+        while i < 5
+          // Widget Product Item
+          .wpi
+            a.wpi__thumbnail(href="#")
+              img(src="http://placehold.it/84x84", alt="#{i++}")
+            .wpi__context
+              h3.wpi__context-h 
+                a(href="#") Hot Grilled Steak
+              .wpi__context-rate.wpi__context-rate--4
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                
+              p.wpi__context-price $18.00
+            
+        
+    
