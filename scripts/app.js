@@ -114,7 +114,7 @@ var app = (function($) {
 			carousel('#dinner');
 			bqCarousel('#blockquote');
 		}
-		
+
 		textCircle('#circleOne');
 		textCircle('#circleTwo', -2);
 
@@ -149,13 +149,21 @@ var app = (function($) {
 		});
 
 		// DateTime Picker
-
 		// Set specific time
 		$.datetimepicker.setLocale('vi');
-
 		$('#datetime').datetimepicker({
 			minDate: Date.now(),
 			format: 'd/F/Y - H:i'
+		});
+
+		// Range Slider
+		$('#rangeOne').ionRangeSlider({
+			type: 'double',
+			min: 0,
+			max: 500,
+			from: 100,
+			to: 400,
+			prefix: '$'
 		});
 
 	};

@@ -1,9 +1,8 @@
 section.padding-small
   .row
     .medium-9.medium-push-3.columns
-      h1 Main content
       
-      .row
+      .row.columns
         span All Products
         select.products-filter#pFilter
           option(value="all") All Products
@@ -12,24 +11,25 @@ section.padding-small
           option(value="extoch") $$$ - $
           option(value="chtoex") $ - $$$
           
-      .row
+      .row.columns
         section.products-list
-          figure.product-item
-            .product-item__thumbnail
-              a(href="#")
-                img(src="http://placehold.it/270x302", alt="")
-              a.product-item__cta(href="#"): i.fa.fa-shopping-cart
-            figcaption.product-item__detail
-              a(href="#") Succulent Peppered Steak
-              div
-                span.product-item__price $18.00
-                ul.product-item__meta
-                  li
-                    a(href="#"): i.fa.fa-search
-                  li
-                    a(href="#"): i.fa.fa-heart
+          - var i = 1
+          while i < 10
+            figure.product-item
+              .product-item__thumbnail
+                a(href="#")
+                  img(src="http://placehold.it/270x302", alt="#{i++}")
+                a.product-item__cta(href="#"): i.fa.fa-shopping-cart
+              figcaption.product-item__detail
+                a(href="#") Succulent Peppered Steak
+                div
+                  span.product-item__price $18.00
+                  ul.product-item__meta
+                    li
+                      a(href="#"): i.fa.fa-search
+                    li
+                      a(href="#"): i.fa.fa-heart
               
-      
     .medium-3.medium-pull-9.columns
       section.widget.widget_categories
         h2.widget-title Categories
@@ -44,8 +44,9 @@ section.padding-small
           
       section.widget.widget_filter
         h2.widget-title Price Products
-        p Placeholder for filter
-        
+        input#rangeOne(type="text" name="rangeOne")
+        a.btn.btn--primary(href="#") Filter
+           
       section.widget
         h2.widget-title Top Rate Products
         
@@ -58,7 +59,7 @@ section.padding-small
             .wpi__context
               h3.wpi__context-h 
                 a(href="#") Hot Grilled Steak
-              .wpi__context-rate.wpi__context-rate--4
+              .wpi__context-rate.wpi__context-rate--5
                 i.fa.fa-star
                 i.fa.fa-star
                 i.fa.fa-star
